@@ -1,27 +1,27 @@
 /**
- * Abubakari Logistics - Unified App Logic
+ * RUIA ENTERPRISES - Unified App Logic
  */
 
 // 1. Fleet Data & Initialization
 const fleet = [{
         title: "Pan Double Trailers",
         desc: "Maximum volume capacity for long-distance Southern Africa routes.",
-        image: "assets/images/double trailers.jpeg"
+        image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/B_double_logging_truck_in_Australia.jpg/960px-B_double_logging_truck_in_Australia.jpg"
     },
     {
         title: "Single Trailers",
         desc: "Versatile regional distribution for standard palletized cargo.",
-        image: "assets/images/main.jpeg"
+        image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/DHL_semi-trailer_-_unloaded_from_ferry.JPG/960px-DHL_semi-trailer_-_unloaded_from_ferry.JPG"
     },
     {
         title: "Container Transport",
         desc: "Specialized logistics for 20ft and 40ft international containers.",
-        image: "assets/images/flayer1.jpg"
+        image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Cargo_Container_Hauling_Truck.jpg/960px-Cargo_Container_Hauling_Truck.jpg"
     },
     {
         title: "Tipper Trucks",
         desc: "Heavy-duty tipping solutions for bulk commodities and mining.",
-        image: "assets/images/tipper.jpg"
+        image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Mercedes-Benz_Arocs_-_dump_truck_version_%281%29.JPG/960px-Mercedes-Benz_Arocs_-_dump_truck_version_%281%29.JPG"
     }
 ];
 
