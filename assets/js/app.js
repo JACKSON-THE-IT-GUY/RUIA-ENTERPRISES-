@@ -31,11 +31,11 @@ function loadFleet() {
 
     grid.innerHTML = fleet.map(truck => `
         <div class="group bg-[#0a0a0a] border border-white/5 rounded-[2rem] overflow-hidden transition-all duration-700 hover:border-yellow-500/30">
-            <div class="h-60 w-full relative bg-zinc-900 overflow-hidden">
+            <div class="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
                 <!-- Image with error handling to show icon if path is wrong -->
                 <img src="${truck.image}" 
                      alt="${truck.title}" 
-                     class="w-full h-full object-cover opacity-40 group-hover:opacity-60 group-hover:scale-105 transition duration-700"
+                     class="h-full w-full object-contain p-2 transition duration-700 group-hover:scale-[1.02]"
                      onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden')">
                 
                 <!-- Fallback Icon (Hidden unless image fails) -->
@@ -48,7 +48,7 @@ function loadFleet() {
 
                 <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent"></div>
             </div>
-            <div class="p-8 -mt-10 relative z-10">
+            <div class="relative z-10 p-6 sm:p-8">
                 <div class="h-1 w-10 bg-yellow-500 mb-4"></div>
                 <h4 class="text-lg font-bold mb-2 uppercase tracking-tight">${truck.title}</h4>
                 <p class="text-slate-500 text-xs leading-relaxed font-light">${truck.desc}</p>
