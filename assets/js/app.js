@@ -11,7 +11,7 @@ const fleet = [{
     {
         title: "Single Trailers",
         desc: "Versatile regional distribution for standard palletized cargo.",
-        image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/DHL_semi-trailer_-_unloaded_from_ferry.JPG/960px-DHL_semi-trailer_-_unloaded_from_ferry.JPG"
+        image: "assets/images/single.jpg"
     },
     {
         title: "Container Transport",
