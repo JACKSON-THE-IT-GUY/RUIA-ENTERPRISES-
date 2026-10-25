@@ -6,7 +6,7 @@
 const fleet = [{
         title: "Pan Double Trailers",
         desc: "Maximum volume capacity for long-distance Southern Africa routes.",
-        image: "assets/images/pantruck.jpg"
+        image: "assets/images/double.png"
     },
     {
         title: "Single Trailers",
@@ -16,12 +16,18 @@ const fleet = [{
     {
         title: "Container Transport",
         desc: "Specialized logistics for 20ft and 40ft international containers.",
-        image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Cargo_Container_Hauling_Truck.jpg/960px-Cargo_Container_Hauling_Truck.jpg"
+        image: "assets/images/container.png"
     },
     {
         title: "Tipper Trucks",
         desc: "Heavy-duty tipping solutions for bulk commodities and mining.",
         image: "assets/images/tipper.jpg"
+    },
+    {
+        title: "RUIA Operations Centre",
+        desc: "Our Jet Park base supports warehousing, dispatch, and fleet operations.",
+        image: "assets/images/ruia-building.jpg",
+        fit: "cover"
     }
 ];
 
@@ -35,7 +41,8 @@ function loadFleet() {
                 <!-- Image with error handling to show icon if path is wrong -->
                 <img src="${truck.image}" 
                      alt="${truck.title}" 
-                     class="h-full w-full object-contain p-2 transition duration-700 group-hover:scale-[1.02]"
+                     class="h-full w-full p-2 transition duration-700 group-hover:scale-[1.02]"
+                     style="object-fit: ${truck.fit || 'contain'}"
                      onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden')">
                 
                 <!-- Fallback Icon (Hidden unless image fails) -->
