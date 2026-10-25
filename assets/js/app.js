@@ -6,7 +6,7 @@
 const fleet = [{
         title: "Pan Double Trailers",
         desc: "Maximum volume capacity for long-distance Southern Africa routes.",
-        image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/B_double_logging_truck_in_Australia.jpg/960px-B_double_logging_truck_in_Australia.jpg"
+        image: "assets/images/pantruck.jpg"
     },
     {
         title: "Single Trailers",
@@ -21,7 +21,7 @@ const fleet = [{
     {
         title: "Tipper Trucks",
         desc: "Heavy-duty tipping solutions for bulk commodities and mining.",
-        image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Mercedes-Benz_Arocs_-_dump_truck_version_%281%29.JPG/960px-Mercedes-Benz_Arocs_-_dump_truck_version_%281%29.JPG"
+        image: "assets/images/tipper.jpg"
     }
 ];
 
