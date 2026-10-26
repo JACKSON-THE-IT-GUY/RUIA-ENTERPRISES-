@@ -21,7 +21,7 @@ const fleet = [{
     {
         title: "Tipper Trucks",
         desc: "Heavy-duty tipping solutions for bulk commodities and mining.",
-        image: "assets/images/tipper.jpg"
+        image: "assets/images/tipper.png"
     },
     {
         title: "RUIA Operations Centre",
