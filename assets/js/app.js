@@ -6,7 +6,7 @@
 const fleet = [{
         title: "Pan Double Trailers",
         desc: "Maximum volume capacity for long-distance Southern Africa routes.",
-        image: "assets/images/double.png"
+        image: "assets/images/pantrailor.png"
     },
     {
         title: "Single Trailers",
