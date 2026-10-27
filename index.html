@@ -21,12 +21,79 @@
     {
         "@context": "https://schema.org",
         "@type": "Organization",
+        "@id": "https://ruiaenterprises.com/#organization",
         "name": "RUIA ENTERPRISES",
         "url": "https://ruiaenterprises.com/",
+        "description": "RUIA ENTERPRISES is a logistics, transport and freight-forwarding company providing road freight, transportation and supply chain services across South Africa and regional markets.",
         "logo": "https://ruiaenterprises.com/assets/images/favicon.png",
         "image": "https://ruiaenterprises.com/assets/images/logo1.png",
         "email": "info@ruiaenterprises.com",
-        "telephone": "+27688009135"
+        "telephone": "+27688009135",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "2nd Floor West Tower, Nelson Mandela Square",
+            "addressLocality": "Sandton",
+            "addressRegion": "Gauteng",
+            "postalCode": "2196",
+            "addressCountry": "ZA"
+        },
+        "location": {
+            "@type": "Place",
+            "name": "RUIA ENTERPRISES Warehouse",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "2 Harold Flight Road, Cnr Burry Koen Street, Jet Park",
+                "addressLocality": "Boksburg",
+                "addressRegion": "Gauteng",
+                "postalCode": "1459",
+                "addressCountry": "ZA"
+            }
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "South Africa"
+        },
+        "knowsAbout": [
+            "Logistics",
+            "Road Freight Transport",
+            "Freight Forwarding",
+            "Transportation Services",
+            "Supply Chain Logistics"
+        ],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Logistics and Transport Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Road Freight Transport"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Freight Forwarding"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Import and Export"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Customs Clearance"
+                    }
+                }
+            ]
+        }
     }
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -525,7 +592,33 @@
                 <figure class="overflow-hidden rounded-[2rem] border border-white/5 bg-[#0a0a0a]">
                     <img src="assets/images/new.png" alt="RUIA ENTERPRISES team outside the warehouse" loading="lazy" class="h-80 w-full object-cover object-top transition duration-700 hover:scale-[1.03]" onerror="this.closest('figure').remove()">
                 </figure>
+                <figure class="overflow-hidden rounded-[2rem] border border-white/5 bg-[#0a0a0a]">
+                    <img src="assets/images/new2.png" alt="RUIA ENTERPRISES team and fleet" loading="lazy" class="h-80 w-full object-cover transition duration-700 hover:scale-[1.03]" onerror="this.closest('figure').remove()">
+                </figure>
+                <figure class="overflow-hidden rounded-[2rem] border border-white/5 bg-[#0a0a0a]">
+                    <img src="assets/images/new3.png" alt="RUIA ENTERPRISES team member" loading="lazy" class="h-80 w-full object-cover transition duration-700 hover:scale-[1.03]" onerror="this.closest('figure').remove()">
+                </figure>
             </div>
+        </div>
+    </section>
+
+    <!-- Location Map Section -->
+    <section id="map" class="py-16 px-6 bg-[#050505] border-t border-white/5">
+        <div class="max-w-7xl mx-auto reveal-card">
+            <h3 class="text-[9px] uppercase tracking-[0.4em] text-yellow-500 font-bold mb-2">Find Us</h3>
+            <h4 class="text-2xl font-bold mb-3 tracking-tighter">Visit Our Warehouse.</h4>
+            <p class="text-sm text-zinc-400 mb-8">2 Harold Flight Road, Cnr Burry Koen Street, Jet Park, Boksburg, 1459, South Africa</p>
+            <div class="overflow-hidden rounded-[2rem] border border-white/10">
+                <iframe
+                    title="RUIA ENTERPRISES warehouse location map"
+                    class="block h-80 w-full border-0 sm:h-[26rem]"
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://maps.google.com/maps?q=-26.1738,28.2163&amp;hl=en&amp;z=16&amp;output=embed">
+                </iframe>
+            </div>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=2%20Harold%20Flight%20Road%2C%20corner%20Burry%20Koen%20Street%2C%20Jet%20Park%2C%20Boksburg%201459%2C%20South%20Africa" target="_blank" rel="noopener noreferrer" class="mt-5 inline-block text-xs font-bold uppercase tracking-widest text-yellow-500 hover:text-yellow-400 transition-colors">Get directions &rarr;</a>
         </div>
     </section>
 
@@ -696,15 +789,21 @@
                                         <p class="text-zinc-200">2 HAROLD FLIGHT ROAD, CNR BURRY KOEN STREET, JET PARK, BOKSBURG, 1459, SOUTH AFRICA</p>
                                     </div>
                                 </div>
-                                <div id="warehouse-location" class="h-80 overflow-hidden rounded-xl border border-zinc-200">
-                                    <iframe
-                                        title="RUIA ENTERPRISES location map"
-                                        class="h-full w-full border-0"
-                                        loading="lazy"
-                                        allowfullscreen
-                                        referrerpolicy="no-referrer-when-downgrade"
-                                        src="https://maps.google.com/maps?q=-26.1738,28.2163&amp;hl=en&amp;z=17&amp;output=embed">
-                                    </iframe>
+                                <div id="warehouse-location" class="overflow-hidden rounded-xl border border-zinc-200">
+                                    <div class="flex flex-wrap items-center justify-between gap-3 bg-zinc-900 px-4 py-3">
+                                        <h5 class="text-xs font-bold uppercase tracking-widest text-white">Warehouse Map</h5>
+                                        <a href="https://www.google.com/maps/search/?api=1&amp;query=2%20Harold%20Flight%20Road%2C%20corner%20Burry%20Koen%20Street%2C%20Jet%20Park%2C%20Boksburg%201459%2C%20South%20Africa" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-yellow-500 hover:text-yellow-400">Open directions &rarr;</a>
+                                    </div>
+                                    <div class="h-80">
+                                        <iframe
+                                            title="RUIA ENTERPRISES location map"
+                                            class="h-full w-full border-0"
+                                            loading="lazy"
+                                            allowfullscreen
+                                            referrerpolicy="no-referrer-when-downgrade"
+                                            src="https://maps.google.com/maps?q=-26.1738,28.2163&amp;hl=en&amp;z=17&amp;output=embed">
+                                        </iframe>
+                                    </div>
                                 </div>
                                 <div class="flex items-start gap-4">
                                     <div class="text-yellow-500 mt-1">
