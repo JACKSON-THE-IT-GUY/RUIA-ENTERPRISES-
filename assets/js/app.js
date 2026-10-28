@@ -25,8 +25,8 @@ const fleet = [{
     },
     {
         title: "RUIA Operations Centre",
-        desc: "Our Jet Park base supports warehousing, dispatch, and fleet operations.",
-        image: "assets/images/ruia-building.jpg",
+        desc: "Our team supports warehousing, dispatch, and fleet operations.",
+        image: "assets/images/operations-centre.jpg",
         fit: "cover"
     }
 ];
